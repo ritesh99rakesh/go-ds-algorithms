@@ -7,11 +7,11 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 
 It is recommended that you use LinearSearchInts, LinearSearchFloat64s
-and LinearSearchStrings, as they have inbuild func and sanity check.
+and LinearSearchStrings, as they have inbuilt func and sanity check.
 */
-func LinearSearch(n int, f func(int) bool) int {
+func LinearSearch(n int, equalityFunc func(int) bool) int {
 	for i := 0; i < n; i++ {
-		if f(i) {
+		if equalityFunc(i) {
 			return i
 		}
 	}
@@ -19,7 +19,7 @@ func LinearSearch(n int, f func(int) bool) int {
 }
 
 /*
-LinearSearchInts performs linear serch over int array.
+LinearSearchInts performs linear search over int array.
 Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
@@ -28,7 +28,7 @@ func LinearSearchInts(arr []int, x int) int {
 }
 
 /*
-LinearSearchFloat64s performs linear serch over float64 array.
+LinearSearchFloat64s performs linear search over float64 array.
 Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
@@ -37,7 +37,7 @@ func LinearSearchFloat64s(arr []float64, x float64) int {
 }
 
 /*
-LinearSearchStrings performs linear serch over string array.
+LinearSearchStrings performs linear search over string array.
 Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
