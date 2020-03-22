@@ -24,7 +24,11 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
 func LinearSearchInts(arr []int, x int) int {
-	return LinearSearch(len(arr), func(i int) bool { return arr[i] == x })
+	arrLen := len(arr)
+	if arrLen == 0 {
+		panic("cannot search in array of size 0")
+	}
+	return LinearSearch(arrLen, func(i int) bool { return arr[i] == x })
 }
 
 /*
@@ -33,7 +37,11 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
 func LinearSearchFloat64s(arr []float64, x float64) int {
-	return LinearSearch(len(arr), func(i int) bool { return arr[i] == x })
+	arrLen := len(arr)
+	if arrLen == 0 {
+		panic("cannot search in array of size 0")
+	}
+	return LinearSearch(arrLen, func(i int) bool { return arr[i] == x })
 }
 
 /*
@@ -42,5 +50,9 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
 func LinearSearchStrings(arr []string, x string) int {
-	return LinearSearch(len(arr), func(i int) bool { return arr[i] == x })
+	arrLen := len(arr)
+	if arrLen == 0 {
+		panic("cannot search in array of size 0")
+	}
+	return LinearSearch(arrLen, func(i int) bool { return arr[i] == x })
 }

@@ -29,7 +29,11 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
 func BinarySearchInts(arr []int, x int) int {
-	return BinarySearch(len(arr), func(i int) bool { return arr[i] == x }, func(i int) bool { return arr[i] < x })
+	arrLen := len(arr)
+	if arrLen == 0 {
+		panic("cannot search in array of size 0")
+	}
+	return BinarySearch(arrLen, func(i int) bool { return arr[i] == x }, func(i int) bool { return arr[i] < x })
 }
 
 /*
@@ -38,7 +42,11 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
 func BinarySearchFloat64s(arr []float64, x float64) int {
-	return BinarySearch(len(arr), func(i int) bool { return arr[i] == x }, func(i int) bool { return arr[i] < x })
+	arrLen := len(arr)
+	if arrLen == 0 {
+		panic("cannot search in array of size 0")
+	}
+	return BinarySearch(arrLen, func(i int) bool { return arr[i] == x }, func(i int) bool { return arr[i] < x })
 }
 
 /*
@@ -47,5 +55,9 @@ Returns (pos int). If element is found: returns pos,
 else: returns -1
 */
 func BinarySearchStrings(arr []string, x string) int {
-	return BinarySearch(len(arr), func(i int) bool { return arr[i] == x }, func(i int) bool { return arr[i] < x })
+	arrLen := len(arr)
+	if arrLen == 0 {
+		panic("cannot search in array of size 0")
+	}
+	return BinarySearch(arrLen, func(i int) bool { return arr[i] == x }, func(i int) bool { return arr[i] < x })
 }

@@ -1,4 +1,4 @@
-package tests
+package search
 
 import (
 	"github.com/go-ds-algorithms/algorithms/sort"
