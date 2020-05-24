@@ -1,7 +1,7 @@
-package search
+package tests
 
 import (
-	"github.com/go-ds-algorithms/algorithms/sort"
+	"github.com/ritesh99rakesh/go-ds-algorithms/algorithms/sort"
 	"reflect"
 	"testing"
 )

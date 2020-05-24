@@ -1,7 +1,7 @@
-package search
+package tests
 
 import (
-	"github.com/go-ds-algorithms/algorithms/search"
+	"github.com/ritesh99rakesh/go-ds-algorithms/algorithms/search"
 	"testing"
 )
 

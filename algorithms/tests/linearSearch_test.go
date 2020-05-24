@@ -1,9 +1,8 @@
-package search
+package tests
 
 import (
+	"github.com/ritesh99rakesh/go-ds-algorithms/algorithms/search"
 	"testing"
-
-	"github.com/go-ds-algorithms/algorithms/search"
 )
 
 func TestLinearSearch(t *testing.T) {

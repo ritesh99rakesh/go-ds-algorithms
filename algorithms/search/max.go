@@ -5,7 +5,7 @@ MaxInts performs linear search for maximum element on a given int array.
 Returns (pos int). If more than element are maximum returns the
 first position of occurrence.
 */
-func MaxInts(arr []int) int {
+func MaxInts(arr []int) (int, int) {
 	arrLen := len(arr)
 	if arrLen == 0 {
 		panic("cannot search in array of size 0")
@@ -16,7 +16,7 @@ func MaxInts(arr []int) int {
 			maxValue, maxPos = currVal, currPos
 		}
 	}
-	return maxPos
+	return maxValue, maxPos
 }
 
 /*
@@ -24,7 +24,7 @@ MaxFloat64s performs linear search for maximum element on a given float64 array.
 Returns (pos int). If more than element are maximum returns the
 first position of occurrence.
 */
-func MaxFloat64s(arr []float64) int {
+func MaxFloat64s(arr []float64) (float64, int) {
 	arrLen := len(arr)
 	if arrLen == 0 {
 		panic("cannot search in array of size 0")
@@ -35,7 +35,7 @@ func MaxFloat64s(arr []float64) int {
 			maxValue, maxPos = currVal, currPos
 		}
 	}
-	return maxPos
+	return maxValue, maxPos
 }
 
 /*
@@ -43,7 +43,7 @@ MaxStrings performs linear search for maximum element on a given string array.
 Returns (pos int). If more than element are maximum returns the
 first position of occurrence.
 */
-func MaxStrings(arr []string) int {
+func MaxStrings(arr []string) (string, int) {
 	arrLen := len(arr)
 	if arrLen == 0 {
 		panic("cannot search in array of size 0")
@@ -54,5 +54,5 @@ func MaxStrings(arr []string) int {
 			maxValue, maxPos = currVal, currPos
 		}
 	}
-	return maxPos
+	return maxValue, maxPos
 }

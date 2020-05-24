@@ -1,7 +1,7 @@
 package tests
 
 import (
-	"github.com/go-ds-algorithms/ds"
+	"github.com/ritesh99rakesh/go-ds-algorithms/ds"
 	"reflect"
 	"testing"
 )
